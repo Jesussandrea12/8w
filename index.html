@@ -15,31 +15,30 @@
     <link rel="manifest" href="dist/images/site.webmanifest">
     <link rel="mask-icon" href="dist/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="dist/css/main.css">
   </head>
   <body>
     <!-- navigation -->
-    <nav class="top-bar topbar-responsive">
+    <nav class="top-bar topbar-responsive align-spaced">
       <div class="top-bar-title">
         <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
           <button class="menu-icon" type="button" data-toggle></button>
         </span>
         <a class="topbar-responsive-logo" href="#">
-          <img src="dist/images/logo.png" alt="logo">
+          <img src="dist/images/logo-lg.png" class="logo" alt="logo">
         </a>
       </div>
       <div id="topbar-responsive" class="topbar-responsive-links">
         <div class="top-bar-right">
-          <ul class="menu simple vertical medium-horizontal">
+          <ul class="menu simple vertical medium-horizontal align-">
+            <li><a href="#">+</a></li>
             <li><a href="#">Qué es</a></li>
             <li><a href="#">Clase muestra</a></li>
             <li><a href="#">Centros</a></li>
-            <li><a href="#">Chat en linea</a></li>
-            <li>
-              <button type="button" class="button hollow topbar-responsive-button">Categories</button>
-            </li>
+            <li><a href="#"><i class="fas fa-comment-alt"></i> Chat en linea</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></i></a></li>
           </ul>
         </div>
       </div>
@@ -47,21 +46,77 @@
 
     <!-- hero-wrapper -->
     <div class="hero-wrapper">
-      <h3>El programa de entrenamiento que te cambia en 8 semanas</h3>
-      <div class="hero-wrapper-cta">
-        <h3>Haz click para solicitar tu clase muestra</h3>
+      <h3 class="text-center hero-wrapper-description">
+        El programa de entrenamiento que te cambia en 8 semanas
+      </h3>
+      <div class="hero-wrapper-opacity">
+        <div class="hero-wrapper-cta">
+          <h3 class="text-center">
+            <i class="fas fa-angle-double-left"></i>
+            Haz click para solicitar tu clase muestra
+            <i class="fas fa-angle-double-right"></i>
+          </h3>
+        </div>
+        <div class="grid-x">
+          <div class="cell small-4 large-offset-2 hero-wrapper-start">
+            <h3 class="text-center hero-wrapper-start-date">Inicio <br> de ciclo:</h3>
+            <h2 class="text-center hero-wrapper-start-month">
+              M<span class="hero-wrapper-start-month-a">a</span>rzo<span class="hero-wrapper-start-month-5">5</span>
+            </h2>
+          </div>
+          <div class="cell small-4">
+            <img class="align-right hero-wrapper-layer" src="dist/images/man-layer.png" alt="logo">
+          </div>
+        </div>
+      </div>
+      <div class="hero-wrapper-scroll">
+        <p>scroll</p>
       </div>
     </div>
 
+    <!-- planes -->
+    <section class="plans-section">
+      <div class="grid-x">
+        <div class="cell small-12 medium-4 large-6 plans-section-move">
+          <img src="dist/images/muevete.jpg" alt="comienza-moverte">
+        </div>
+        <div class="cell small-12 medium-8 large-6 plans-section-tonify">
+          <img src="dist/images/tonifica.jpg" alt="tonifica">
+        </div>
+      </div>
+    </section>
+
+    <div class="banner-nutricion">
+      <h3>Nutrición personalizada</h3>
+      <p>Descubre un plan de alimentación enfocado a tus necesidades y objetivos</p>
+      <img src="dist/images/woman-banner.jpg" alt="banner">
+    </div>
+
+    <div class="contacto">
+      <input type="text" name="" value="" placeholder="Nombre completo">
+      <input type="email" name="" value="" placeholder="Email">
+      <input type="number" name="" value="" placeholder="telefono movil">
+      <input type="datetime" name="" value="" placeholder="horario de contacto">
+      <input type="text" name="" value="" placeholder="surcusal de interes">
+      <input type="checkbox" name="" value="">
+      <input type="checkbox" name="" value="">
+    </div>
+
+    <footer>
+      <img src="dist/images/logo.png" alt="logo">
+    </footer>
+
+
+
     <!-- JavaScript -->
-    <script src="js/scripts.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="dist/js/scripts.js"></script>
+    <script src="dist/js/vendor/jquery.js"></script>
+    <script src="dist/js/vendor/what-input.js"></script>
+    <script src="dist/js/vendor/foundation.min.js"></script>
+    <script src="dist/js/app.js"></script>
 
     <!-- Css -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </body>
 </html>

@@ -1,6 +1,9 @@
 
 .topbar-responsive {
-  background: #2c3840;
+  /* background: url('../images/bg-nav.png'); */
+  background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.3));
+  background-size: cover;
+  background-position: center;
   padding: 1rem 1.5rem;
 }
 
@@ -10,7 +13,7 @@
 }
 
 .topbar-responsive .menu {
-  background: #2c3840;
+  background-color: transparent;
 }
 
 .topbar-responsive .menu li:last-of-type {
@@ -20,6 +23,11 @@
 .topbar-responsive .menu a {
   color: #fefefe;
   transition: color 0.15s ease-in;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .topbar-responsive .menu a:hover {
@@ -125,4 +133,8 @@
     -webkit-animation: fadeIn 1s ease-in;
             animation: fadeIn 1s ease-in;
   }
+}
+
+.logo {
+  width: 110px;
 }

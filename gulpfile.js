@@ -32,7 +32,7 @@ gulp.task('css', function () {
     csswring()
   ]
 
-  return gulp.src('./src/main.css')
+  return gulp.src('./src/*.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream())
