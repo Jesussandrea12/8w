@@ -5,7 +5,7 @@ var cssnested = require('postcss-nested')
 var cssnext = require('postcss-cssnext')
 var mixins = require('postcss-mixins')
 var lost = require('lost')
-var atImport = require('postcss-import')
+var cssImport = require('postcss-import')
 var csswring = require('csswring')
 var mqpacker = require('css-mqpacker')
 var browserSync = require('browser-sync').create()
@@ -22,7 +22,7 @@ gulp.task('serve', function () {
 // Tarea para procesar el CSS
 gulp.task('css', function () {
   var processors = [
-    atImport(),
+    cssImport(),
     mixins(),
     lost(),
     rucksack(),
@@ -32,7 +32,7 @@ gulp.task('css', function () {
     csswring()
   ]
 
-  return gulp.src('./src/*.css')
+  return gulp.src('./src/main.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream())
