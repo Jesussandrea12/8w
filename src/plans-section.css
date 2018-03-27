@@ -1,0 +1,71 @@
+/* ========================= plans-section ===================================*/
+
+a {
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.plans-section {
+  min-height: auto;
+
+  &-move {
+    padding-right: 1em !important;
+
+    & img {
+      cursor: pointer;
+    }
+  }
+  &-tonify {
+    padding-left: 1em !important;
+
+    & img {
+      cursor: pointer;
+    }
+  }
+  &-scroll {
+    margin-top: 0 !!important;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--dark);
+    font-family: var(--montserrat), sans-serif;
+    text-align: center;
+
+    & p {
+      margin-bottom: 0 !important;
+    }
+
+    & i {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      font-size: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .plans-section {
+    &-move {
+      & img {
+        margin: 0 auto !important;
+      }
+    }
+    &-tonify {
+      & img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+.more {
+  background: url(../images/bg-nav.png);
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(0,0,0,.5);
+
+  &:hover {
+    background-color: rgba(0,0,0,.7);
+  }
+}

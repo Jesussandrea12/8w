@@ -31,8 +31,7 @@
       </div>
       <div id="topbar-responsive" class="topbar-responsive-links">
         <div class="top-bar-right">
-          <ul class="menu simple vertical medium-horizontal align-">
-            <li><a href="#">+</a></li>
+          <ul class="menu simple vertical medium-horizontal">
             <li><a href="#">Qué es</a></li>
             <li><a href="#">Clase muestra</a></li>
             <li><a href="#">Centros</a></li>
@@ -52,60 +51,239 @@
       <div class="hero-wrapper-opacity">
         <div class="hero-wrapper-cta">
           <h3 class="text-center">
-            <i class="fas fa-angle-double-left"></i>
-            Haz click para solicitar tu clase muestra
-            <i class="fas fa-angle-double-right"></i>
+            <a href="#">
+              <i class="fas fa-angle-double-left"></i>
+                Haz click para solicitar tu clase muestra
+              <i class="fas fa-angle-double-right"></i>
+            </a>
           </h3>
         </div>
         <div class="grid-x">
-          <div class="cell small-4 large-offset-2 hero-wrapper-start">
-            <h3 class="text-center hero-wrapper-start-date">Inicio <br> de ciclo:</h3>
-            <h2 class="text-center hero-wrapper-start-month">
-              M<span class="hero-wrapper-start-month-a">a</span>rzo<span class="hero-wrapper-start-month-5">5</span>
-            </h2>
-          </div>
-          <div class="cell small-4">
-            <img class="align-right hero-wrapper-layer" src="dist/images/man-layer.png" alt="logo">
+          <div class="cell small-12 medium-8 large-7 hero-wrapper-slider">
+            <div class="orbit" role="region" aria-label="Pictures" data-orbit>
+              <div class="orbit-wrapper">
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/slide1.png" alt="slide">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/slide1.png" alt="slide">
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="dist/images/slide1.png" alt="slide">
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span>
+                  <span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
       <div class="hero-wrapper-scroll">
         <p>scroll</p>
+        <i class="fas fa-angle-down"></i>
       </div>
     </div>
 
     <!-- planes -->
     <section class="plans-section">
       <div class="grid-x">
-        <div class="cell small-12 medium-4 large-6 plans-section-move">
-          <img src="dist/images/muevete.jpg" alt="comienza-moverte">
+        <div class="cell small-12 medium-8 large-6 plans-section-move">
+          <a href="#">
+            <img src="dist/images/muevete.jpg" alt="comienza-moverte">
+          </a>
+          <div class="grid-x">
+            <div class="cell small-6">
+              <a class="button large expanded more" href="#">
+                Saber más
+                <i class="fas fa-angle-double-right"></i>
+              </a>
+            </div>
+            <div class="cell small-6">
+              <a class="button large expanded alert" href="#">
+                <i class="fas fa-angle-double-left"></i>
+                Comprar
+              </a>
+            </div>
+          </div>
         </div>
         <div class="cell small-12 medium-8 large-6 plans-section-tonify">
-          <img src="dist/images/tonifica.jpg" alt="tonifica">
+          <a href="#">
+            <img src="dist/images/tonifica.jpg" alt="tonifica">
+          </a>
+          <div class="grid-x">
+            <div class="cell small-6">
+              <a class="button large expanded alert" href="#">
+                Comprar
+                <i class="fas fa-angle-double-right"></i>
+              </a>
+            </div>
+            <div class="cell small-6">
+              <a class="button large expanded more" href="#">
+                <i class="fas fa-angle-double-left"></i>
+                Saber más
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="plans-section-scroll">
+        <p>scroll</p>
+        <i class="fas fa-angle-down"></i>
       </div>
     </section>
 
-    <div class="banner-nutricion">
-      <h3>Nutrición personalizada</h3>
-      <p>Descubre un plan de alimentación enfocado a tus necesidades y objetivos</p>
-      <img src="dist/images/woman-banner.jpg" alt="banner">
+    <div class="banner-nutrition">
+      <div class="grid-x">
+        <div class="cell small-12 medium-10 large-8">
+          <h3 class="banner-nutrition-h3"><strong>Nutrición</strong><br> personalizada</h3>
+          <p class="banner-nutrition-p">Descubre un plan de alimentación enfocado a tus necesidades y objetivos</p>
+        </div>
+        <div class="cell small-12 medium-10 large-4">
+          <img src="dist/images/woman-banner.jpg" alt="banner">
+        </div>
+      </div>
+      <div class="grid-x">
+        <div class="cell small-6">
+          <a class="button medium expanded alert" href="#">
+            Comprar
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </div>
+        <div class="cell small-6">
+          <a class="button medium expanded more" href="#">
+            <i class="fas fa-angle-double-left"></i>
+            Saber más
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="contacto">
-      <input type="text" name="" value="" placeholder="Nombre completo">
-      <input type="email" name="" value="" placeholder="Email">
-      <input type="number" name="" value="" placeholder="telefono movil">
-      <input type="datetime" name="" value="" placeholder="horario de contacto">
-      <input type="text" name="" value="" placeholder="surcusal de interes">
-      <input type="checkbox" name="" value="">
-      <input type="checkbox" name="" value="">
+      <form action="https://formspree.io/your@email.com" method="POST">
+        <div class="grid-container">
+          <h3>Solicita una clase de muestra</h3>
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>
+                <input type="text" placeholder="Nombre Completo" required>
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>
+                <input type="email" placeholder="Email" required>
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>
+                <input type="number" placeholder="Teléfono Móvil" required>
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>
+                <input type="datetime" placeholder="Horario de Contacto" required>
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>
+                <input type="text" placeholder="Surcusal de Interés" required>
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <fieldset class="large-6 cell">
+                <input type="radio" name="branch" value="8w" id="8w" required>
+                <label for="8w">
+                  <img class="logos-form" src="dist/images/logo-form.png" alt="logo-form">
+                </label>
+                <input type="radio" name="branch" value="ko" id="ko">
+                <label for="ko">
+                  <img class="logos-form" src="dist/images/ko-form.png" alt="ko-form">
+                </label>
+              </fieldset>
+            </div>
+            <button type="submit" value="Send" class="button medium expanded alert btn">Enviar</button>
+          </div>
+        </div>
+      </form>
+      <p class="text-center clarification">
+        * La clase muestra no tiene ningún costo e incluye un análisis de composición corporal.
+      </p>
     </div>
 
     <footer>
-      <img src="dist/images/logo.png" alt="logo">
-    </footer>
+      <div class="grid-x">
+        <div class="cell small-12 medium-4 large-4">
+          <div class="cell small-up-12">
+            <img class="footer-logo" src="dist/images/logo-footer.png" alt="logo">
+          </div>
+          <div class="cell small-up-12">
+            <img class="footer-logo-2" src="dist/images/54d.jpg" alt="logo">
+          </div>
+        </div>
+        <div class="cell small-12 medium-8 large-8">
 
+
+          <div class="grid-x">
+            <div class="cell large-4 sucursales">
+              <h4>Barranca</h4>
+              <p>Av. Insurgentes Sur 1647, San Jose Insurgentes, CDMX. Tel. 8435 0991</p>
+            </div>
+            <div class="cell large-4 sucursales">
+              <h4>Barranca</h4>
+              <p>Av. Insurgentes Sur 1647, San Jose Insurgentes, CDMX. Tel. 8435 0991</p>
+            </div>
+            <div class="cell large-4 sucursales">
+              <h4>Barranca</h4>
+              <p>Av. Insurgentes Sur 1647, San Jose Insurgentes, CDMX. Tel. 8435 0991</p>
+            </div>
+            <div class="cell large-4 sucursales">
+              <h4>Barranca</h4>
+              <p>Av. Insurgentes Sur 1647, San Jose Insurgentes, CDMX. Tel. 8435 0991</p>
+            </div>
+            <div class="cell large-4 sucursales">
+              <h4>Barranca</h4>
+              <p>Av. Insurgentes Sur 1647, San Jose Insurgentes, CDMX. Tel. 8435 0991</p>
+            </div>
+            <div class="cell large-4 sucursales">
+              <h4>Barranca</h4>
+              <p>Av. Insurgentes Sur 1647, San Jose Insurgentes, CDMX. Tel. 8435 0991</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-x small-up-2 medium-up-4 large-up-6 padding-1">
+        <div class="cell">
+          <a class="footer-links" href="#">Buzón kicker</a>
+        </div>
+        <div class="cell">
+          <a class="footer-links" href="#">Dudas y comentarios</a>
+        </div>
+        <div class="cell">
+          <a class="footer-links" href="#">Facturación</a>
+        </div>
+        <div class="cell">
+          <a class="footer-links" href="#">Bolsa de trabajo</a>
+        </div>
+        <div class="cell">
+          <a class="footer-links" href="#">Aviso de privacidad</a>
+        </div>
+        <div class="cell">
+          <a class="footer-links" href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- JavaScript -->

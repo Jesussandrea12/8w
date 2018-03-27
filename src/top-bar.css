@@ -31,7 +31,7 @@
 }
 
 .topbar-responsive .menu a:hover {
-  color: #c6d1d8;
+  color: var(--yellow);
 }
 
 @media screen and (max-width: 39.9375em) {
