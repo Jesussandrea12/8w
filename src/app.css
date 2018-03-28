@@ -173,4 +173,11 @@ footer {
       margin-top: .8em;
     }
   }
+
+  .footer-logo {
+
+    &-2 {
+      width: 300px;
+    }
+  }
 }
