@@ -147,3 +147,30 @@ footer {
     color: var(--yellow);
   }
 }
+
+/* media queries */
+@media screen and (max-width: 500px) {
+
+  .banner-nutrition {
+    &-h3 {
+      font-size: 2em;
+    }
+    &-p {
+      font-size: 1em;
+      padding: 1em;
+    }
+  }
+
+  form {
+    padding: 1em;
+  }
+
+  .contacto {
+    & h3 {
+      font-size: 2em;
+    }
+    & button {
+      margin-top: .8em;
+    }
+  }
+}

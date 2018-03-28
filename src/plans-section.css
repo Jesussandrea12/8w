@@ -25,11 +25,11 @@ a {
     }
   }
   &-scroll {
-    position: absolute;
     text-transform: uppercase;
     color: var(--dark);
     font-family: var(--montserrat), sans-serif;
     text-align: center;
+    position: absolute;
     width: 200px;
     left: 50%;
     margin-left: -100px;
@@ -70,5 +70,19 @@ a {
 
   &:hover {
     background-color: rgba(0,0,0,.7);
+  }
+}
+
+/* medias queries */
+@media screen and (max-width: 768px) {
+  .plans-section {
+    padding-top: 3em;
+
+    &-move {
+      padding-right: 0 !important;
+    }
+    &-tonify {
+      padding-left: 0 !important;
+    }
   }
 }
