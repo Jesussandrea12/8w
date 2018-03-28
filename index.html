@@ -90,14 +90,14 @@
           </div>
         </div>
       </div>
-      <div class="hero-wrapper-scroll">
-        <p>scroll</p>
+      <div class="hero-wrapper-scroll" data-magellan>
+        <a href="#plans-section"><p>scroll</p></a>
         <i class="fas fa-angle-down"></i>
       </div>
     </div>
 
     <!-- planes -->
-    <section class="plans-section">
+    <section class="plans-section" id="plans-section" data-magellan-target="plans-section">
       <div class="grid-x">
         <div class="cell small-12 medium-12 large-6 plans-section-move">
           <a href="#">
@@ -138,13 +138,15 @@
           </div>
         </div>
       </div>
-      <div class="plans-section-scroll">
-        <p>scroll</p>
+      <div class="plans-section-scroll" data-magellan>
+        <a href="#banner">
+          <p class="scroll-2">scroll</p>
+        </a>
         <i class="fas fa-angle-down"></i>
       </div>
     </section>
 
-    <div class="banner-nutrition">
+    <div class="banner-nutrition" id="banner" data-magellan-target="banner">
       <div class="grid-x">
         <div class="cell small-12 medium-10 large-8">
           <h3 class="banner-nutrition-h3"><strong>Nutrición</strong><br> personalizada</h3>
@@ -187,18 +189,53 @@
             </div>
             <div class="medium-6 cell">
               <label>
-                <input type="number" placeholder="*Teléfono Móvil (10 Digitos)" required>
+                <input type="tel" placeholder="*Teléfono Móvil (10 Digitos)" min="1" max="10" required>
               </label>
             </div>
             <div class="medium-6 cell">
-              <label>
-                <input type="time" placeholder="*Horario de Contacto" required>
-              </label>
+              <select>
+                <optgroup label="Horario" name="hours">
+                  <option class="option" value="default">*Horario de Contacto</option>
+                  <option value="1am">1 AM</option>
+                  <option value="2am">2 AM</option>
+                  <option value="3am">3 AM</option>
+                  <option value="4am">4 AM</option>
+                  <option value="5am">5 AM</option>
+                  <option value="6am">6 AM</option>
+                  <option value="7am">7 AM</option>
+                  <option value="8am">8 AM</option>
+                  <option value="9am">9 AM</option>
+                  <option value="10am">10 AM</option>
+                  <option value="11am">11 AM</option>
+                  <option value="12am">12 AM</option>
+                  <option value="1pm">1 PM</option>
+                  <option value="2pm">2 PM</option>
+                  <option value="3pm">3 PM</option>
+                  <option value="4pm">4 PM</option>
+                  <option value="5pm">5 PM</option>
+                  <option value="6pm">6 PM</option>
+                  <option value="7pm">7 PM</option>
+                  <option value="8pm">8 PM</option>
+                  <option value="9pm">9 PM</option>
+                  <option value="10pm">10 PM</option>
+                  <option value="11pm">11 PM</option>
+                  <option value="12pm">12 PM</option>
+                </optgroup>
+              </select>
             </div>
             <div class="medium-6 cell">
-              <label>
-                <input type="text" placeholder="*Surcusal de Interés" required>
-              </label>
+              <select>
+                <optgroup label="sucursales" name="branches">
+                  <option class="option" value="default">*Sucursal de interés</option>
+                  <option value="Barranca"> Barranca</option>
+                  <option value="Condesa"> Condesa</option>
+                  <option value="Interlomas"> Interlomas</option>
+                  <option value="Palmas"> Palmas</option>
+                  <option value="Santa Fe"> Santa Fe</option>
+                  <option value="Satélite"> Satélite</option>
+                </optgroup>
+              </select>
+            </label>
             </div>
             <div class="medium-6 cell">
               <fieldset class="large-6 cell">
