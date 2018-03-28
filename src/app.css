@@ -126,14 +126,18 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    font-family: var(--lato);
   }
   & p {
     text-align: center;
+    font-family: var(--montserrat);
+    color: white;
+    font-size: 1.2em;
   }
 }
 
 .footer-links {
-  border-left: 3px solid var(--yellow);
+  border-left: 5px solid var(--yellow);
   padding-left: 1em;
   text-align: center;
   color: white;
