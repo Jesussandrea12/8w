@@ -109,3 +109,12 @@
     height: auto;
   }
 }
+
+@media screen and (min-height: 500px) {
+  .hero-wrapper-description {
+    font-size: 1em;
+  }
+  .hero-wrapper-cta {
+    font-size: 1em;
+  }
+}
