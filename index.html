@@ -177,39 +177,43 @@
           <div class="grid-x grid-padding-x">
             <div class="medium-6 cell">
               <label>
-                <input type="text" placeholder="Nombre Completo" required>
+                <input type="text" placeholder="*Nombre Completo" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>
-                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="*Mail" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>
-                <input type="number" placeholder="Teléfono Móvil (10 Digitos)" required>
+                <input type="number" placeholder="*Teléfono Móvil (10 Digitos)" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>
-                <input type="datetime" placeholder="Horario de Contacto" required>
+                <input type="time" placeholder="*Horario de Contacto" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>
-                <input type="text" placeholder="Surcusal de Interés" required>
+                <input type="text" placeholder="*Surcusal de Interés" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <fieldset class="large-6 cell">
-                <input type="radio" name="branch" value="8w" id="8w" required>
-                <label for="8w">
-                  <img class="logos-form" src="dist/images/logo-form.png" alt="logo-form">
-                </label>
-                <input type="radio" name="branch" value="ko" id="ko">
-                <label for="ko">
-                  <img class="logos-form" src="dist/images/ko-form.png" alt="ko-form">
-                </label>
+                <div class="seleccion1 auto">
+                  <input type="radio" name="branch" value="8w" id="8w" required>
+                  <label for="8w">
+                    <img class="logos-form" src="dist/images/logo-form.png" alt="logo-form">
+                  </label>
+                </div>
+                <div class="seleccion2 auto">
+                  <input type="radio" name="branch" value="ko" id="ko">
+                  <label for="ko">
+                    <img class="logos-form" src="dist/images/ko-form.png" alt="ko-form">
+                  </label>
+                </div>
               </fieldset>
             </div>
             <button type="submit" value="Send" class="button medium expanded alert btn">Enviar</button>

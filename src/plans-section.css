@@ -8,7 +8,8 @@ a {
 
 .plans-section {
   min-height: auto;
-  margin-bottom: 5em;
+  margin-top: 6em;
+  margin-bottom: 6em;
 
   &-move {
     padding-right: 1em !important;
