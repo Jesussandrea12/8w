@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (min-height: 500px) {
+@media screen and (max-width: 500px) {
   .hero-wrapper-description {
     font-size: 1em;
   }
