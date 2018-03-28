@@ -109,6 +109,13 @@ select {
   border-radius: 0 !important;
 }
 
+.centered {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
 .seleccion1 {
   background: var(--lightblue);
   display: inline-block;

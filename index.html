@@ -173,49 +173,47 @@
     </div>
 
     <div class="contacto">
-      <form action="https://formspree.io/your@email.com" method="POST">
+      <form action="https://formspree.io/you@email.com" method="POST">
         <div class="grid-container">
           <h3>Solicita una clase de muestra</h3>
           <div class="grid-x grid-padding-x">
             <div class="medium-6 cell">
               <label>
-                <input type="text" placeholder="*Nombre Completo" required>
+                <input type="text" name="Nombre" placeholder="*Nombre Completo" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>
-                <input type="email" placeholder="*Mail" required>
+                <input type="email" name="email" placeholder="*Mail" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>
-                <input type="tel" placeholder="*Teléfono Móvil (10 Digitos)" min="1" max="10" required>
+                <input type="tel" name="telefono" placeholder="*Teléfono Móvil (10 Digitos)" min="1" max="10" required>
               </label>
             </div>
             <div class="medium-6 cell">
-              <select>
-                <optgroup label="sucursales" name="branches">
-                  <option class="option" value="default">*Sucursal de interés</option>
-                  <option value="Barranca"> Barranca</option>
-                  <option value="Condesa"> Condesa</option>
-                  <option value="Interlomas"> Interlomas</option>
-                  <option value="Palmas"> Palmas</option>
-                  <option value="Santa Fe"> Santa Fe</option>
-                  <option value="Satélite"> Satélite</option>
-                </optgroup>
+              <select name="sucursal">
+                <option class="option" value="default">*Sucursal de interés</option>
+                <option name="sucursal" value="Barranca"> Barranca</option>
+                <option name="sucursal" value="Condesa"> Condesa</option>
+                <option name="sucursal" value="Interlomas"> Interlomas</option>
+                <option name="sucursal" value="Palmas"> Palmas</option>
+                <option name="sucursal" value="Santa Fe"> Santa Fe</option>
+                <option name="sucursal" value="Satélite"> Satélite</option>
               </select>
             </label>
             </div>
-            <div class="medium-6 cell">
-              <fieldset class="large-6 cell">
+            <div class="large-12 cell text-center">
+              <fieldset class="large-12 cell text-center">
                 <div class="seleccion1 auto">
-                  <input type="radio" name="branch" value="8w" id="8w" required>
+                  <input type="radio" name="plan" value="8w" id="8w" required>
                   <label for="8w">
                     <img class="logos-form" src="dist/images/logo-form.png" alt="logo-form">
                   </label>
                 </div>
                 <div class="seleccion2 auto">
-                  <input type="radio" name="branch" value="ko" id="ko">
+                  <input type="radio" name="plan" value="ko" id="ko">
                   <label for="ko">
                     <img class="logos-form" src="dist/images/ko-form.png" alt="ko-form">
                   </label>
