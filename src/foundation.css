@@ -4140,15 +4140,15 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   [data-whatinput='mouse'] .orbit-bullets {
     outline: 0; }
   .orbit-bullets button {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 12px;
+    height: 12px;
     margin: 0.1rem;
     border-radius: 50%;
     background-color: #cacaca; }
     .orbit-bullets button:hover {
       background-color: #8a8a8a; }
     .orbit-bullets button.is-active {
-      background-color: #8a8a8a; }
+      background-color: var(--yellow); }
 
 .thumbnail {
   display: inline-block;
