@@ -278,3 +278,13 @@ footer {
     margin-left: -15px;
     margin-left: -.9375rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .sucursales:nth-child(-n+3) {
+    padding-bottom: 0 !important;
+  }
+
+  .footer-logo {
+    margin-left: 6em !important;
+  }
+}
