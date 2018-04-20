@@ -179,12 +179,12 @@ footer {
 
 .footer-logo {
   margin: 3em;
-  width: 200px;
+  width: 150px;
 
   &-2 {
     margin: 2em;
     margin-left: 0 !important;
-    width: 300px;
+    width: 250px;
   }
 }
 
