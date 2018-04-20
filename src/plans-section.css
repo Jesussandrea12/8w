@@ -12,8 +12,8 @@ a {
   min-height: auto;
   margin-top: 1em;
   padding-top: 1em;
-  margin-bottom: 3em;
-  padding-bottom: 3em;
+  margin-bottom: 2.5em;
+  padding-bottom: 2.5em;
 
   &-move {
     margin-right: 1em !important;
@@ -59,7 +59,7 @@ a {
     transform: translateY(0px);
   }
   60% {
-    transform: translateY(35px);
+    transform: translateY(25px);
   }
   100% {
     transform: translateY(0px);
