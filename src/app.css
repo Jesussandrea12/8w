@@ -225,7 +225,10 @@ footer {
 
 /* media queries */
 @media screen and (max-width: 500px) {
-
+  body {
+    background-size: contain;
+  }
+  
   .banner-nutrition {
     &-h3 {
       font-size: 2em;
