@@ -104,3 +104,22 @@ a {
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .button.large {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+  .topbar-responsive .menu a {
+    margin-top: 0;
+  }
+
+  .topbar-responsive .menu a {
+    letter-spacing: 2px;
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
