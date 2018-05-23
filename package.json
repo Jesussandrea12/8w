@@ -36,7 +36,6 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "gulp": "^3.9.1",
     "postcss": "^6.0.5",
     "postcss-custom-properties": "^6.1.0"
   }
